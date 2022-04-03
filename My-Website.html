@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="stylestephen.css" rel="stylesheet"/>
+<title>MS</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>MS</h1>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+        </span>
+        </ul>
+    </nav>
+
+    <script>
+        // this is the script here
+        const mainMenu = document.querySelector(".mainMenu");
+        const closeMenu = document.querySelector(".closeMenu");
+        const openMenu = document.querySelector(".openMenu");
+
+        openMenu.addEventListener("click", show);
+        closeMenu.addEventListener("click", close);
+
+        function show() {
+            mainMenu.style.display = "flex";
+            mainMenu.style.top = "0";
+        }
+
+        function close() {
+            mainMenu.style.top = "-100%";
+        }
+    </script>
+	 
+	 			<img src="https://blog.hubspot.com/hubfs/GettyImages-1334899512%20copy.jpg" alt="Developer using section element to organize code">
+	
+	 
+	 <!-- ==== Intro Section Start ==== -->
+		<div class="intro-section" id="home">
+			<div class="bg-img"></div>
+			<div class="intro-content">
+
+		<h1> Mawuli Stephen <br> Dormekpor</h1>
+		<div class=".post-header__image" id="home">
+				</div>
+				<h6>Salesman| Digital Strategist| UI/UX Designer</h6>
+				
+				<div class="header-btn animated bounceIn">
+					<a href="#contact"><span>Hire me</span></a>
+				</div>
+	<!--====this sections contains years of experience and a brief history about me====-->	
+		<section> 
+		<div>
+		<p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>The experience salesman who loves technology by heart. <br>I am combining my experience in marketing <br>
+		with technology to design products that actually solves problems... </p>
+		</div>
+		<div class="a-box">
+  <div class="text-container">
+    <h3>7+</h3>
+    <div>
+      Years 
+		Experience
+		working
+  </div>
+  
+ 
+  </div>
+  	</section>
+		
+
+<footer> <br>
+Designed and developed by Mawuli Stephen <br> Copyright © 2022 cradx<br>  </footer> 
+
+</body>
+
+</html>
