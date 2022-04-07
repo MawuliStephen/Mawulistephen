@@ -8,49 +8,27 @@
             font-family: "Arial", sans-serif;
         }
 		  
-.section-container {
-		  		background:#fff;
+		  
+		  section {
+		  		background:#F3F4FA;
 				margin-top: 50px;
-				margin-right: 0px;
-				height: 360px;
-				outline: none;
-				}
-			
-.section-text {
+				height: 50vh;
 				text-align: center;
 				margin-left:0px
 				margin-right:0
 				
 				}
 
-.Footer-container {
-			background-color: #F3F4FA;
+Footer {
+			background: #222;
 			font-size: 16px;
-			height: 166px;
+			text-align:center;
 			color: #444;
-			margin-top: 400px;
-			margin-left:0px;
-			margin-right: 100px
+			margin-top: 50px;
 			border-radius:0px 100px 0px 0px;
-			outline-color:#535353;
+			outline-color:#535353
 			
 			}
-
-	 
-.Footer-text-container {
-	padding: 10px;
-	text-align:center;
-	
-	
-	}
-
-article {
-		text-align: justify;
-		margin-left:25%;
-		width: 500px;
-		margin-top: -0%;
-		}
-
 
 
 /*================================================
@@ -58,10 +36,10 @@ this section is styling the cardview. this content is inside section
 ===================================================================*/
 .a-box {
   display: inline-block;
-  width: 200px;
+  width: 240px;
   text-align: center;
   float: left;
-  margin-top: -1%;
+  margin-top: 0%;
   padding: 30px;
 }
 
@@ -72,15 +50,14 @@ this section is styling the cardview. this content is inside section
   background: #fff;
   margin: -120px 0px 0px 0px;
   line-height: 19px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .text-container h3 {
-  margin: -50px 20px 20px 20px;
+  margin: -35px 20px 20px 20px;
   color: #535353;
   font-size: 70px;
   text-align: center;
-  
  
 }
 
@@ -156,7 +133,7 @@ This the navigation styles
         
 		  img {
      		display: flex;
-			margin-top: 10px;
+			margin-top: 5px;
      		float: right;
 	  		align-items:center;
 			height: 600px;
@@ -165,10 +142,41 @@ This the navigation styles
 			
 }
 
- 
- 
- 
- 
+        @media (max-width: 800px) {
+            nav .mainMenu {
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 10;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                transition: top 1s ease;
+                display: none;
+            }
+            nav .mainMenu .closeMenu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            nav .openMenu {
+                display: block;
+            }
+            nav .mainMenu li a:hover {
+                background: none;
+                color: rgb(255, 123, 0);
+                font-size: 1.6rem;
+            }
+            .icons i {
+                display: inline-block;
+                padding: 12px;
+            }
+        }
+		  
 		  
 /* ====================
   Intro Section
@@ -256,10 +264,6 @@ This the navigation styles
   font-size: 1.5rem;
 }
 
-
-
-
-
 .changing:nth-child(1) {
   animation: revealNextWord 6s cubic-bezier(0.57, 1.52, 0.9, 1.08) 1.5s infinite;
 }
@@ -326,48 +330,10 @@ This the navigation styles
 
 
 
-
-
-
 /* ====================
   Responsive Section
 =======================*/
 
- @media (max-width: 800px) {
-            nav .mainMenu {
-                height: 100vh;
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 10;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: #000;
-                transition: top 1s ease;
-                display: none;
-            }
-            nav .mainMenu .closeMenu {
-                display: block;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-            }
-            nav .openMenu {
-                display: block;
-            }
-            nav .mainMenu li a:hover {
-                background: none;
-                color: rgb(255, 123, 0);
-                font-size: 1.6rem;
-            }
-            .icons i {
-                display: inline-block;
-                padding: 12px;
-            }
-        }
-		  
 /* Tablet desktop :768px. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -411,7 +377,7 @@ This the navigation styles
 
   header .navigation .menu-list li a:hover{
     color: #b1d4e0;
-    padding-left: 10px;
+    padding-left: 30px;
     background: rgba(177, 212, 224, 0.2);
   }
 
