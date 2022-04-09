@@ -4,14 +4,13 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+	    background-color:F3F6FA;
         }
         
         body {
             font-family: "roboto", sans-serif;
         }
-		  section {
-		  		background: #F3F4FA
-				}
+	
 				
 .section-container {
 		  		background:#F3F4FA;
@@ -101,7 +100,7 @@ this section is styling the cardview. this content is inside section
 This the navigation styles         
 ====================================*/
         nav {
-            background: #fff;
+            background: #F3F6FA;
             color: #000;
             display: flex;
             justify-content: space-between;
