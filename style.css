@@ -4,11 +4,12 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-	    background:F3F6FA;
+	    
         }
         
         body {
             font-family: "roboto", sans-serif;
+		background-color:#F3F6FA
         }
 	
 				
